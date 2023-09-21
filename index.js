@@ -2,7 +2,13 @@ const userInput = document.getElementById('userInput');
 const output = document.getElementById('output');
 let optionsDisplayed = false;
 
-userInput.addEventListener('keydown', function (e) {
+// Automatically focus on the input field when the page loads
+window.addEventListener('load', function () {
+    userInput.focus();
+    userInput.addEventListener('keydown', handleKeyPress);
+});
+
+function handleKeyPress(e) {
     if (e.key === 'Enter') {
         e.preventDefault();
         const inputText = userInput.innerText.trim().toLowerCase();
@@ -34,4 +40,4 @@ userInput.addEventListener('keydown', function (e) {
             }
         }
     }
-});
+}
