@@ -1,0 +1,48 @@
+/* Styling for the "What I'm Doing" section */
+.service {
+    margin-bottom: 35px;
+}
+
+.service-title {
+    margin-bottom: 20px;
+}
+
+.service-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.service-icon-box {
+    background-color: #00FF00; /* Green background for icon box */
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.service-icon-box img {
+    width: 40px;
+}
+
+.service-content-box {
+    margin-left: 20px;
+}
+
+.service-item-title {
+    font-size: 1.2rem;
+    margin-bottom: 7px;
+}
+
+/* Styling for links */
+a {
+    color: #00FF00; /* Green links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
